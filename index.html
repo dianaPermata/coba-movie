@@ -1,21 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive Menu</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/de8de52639.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>Skilmovie</h1>
-        <form  id="form">
-            <input type="text" placeholder="Search" id="search" class="search">
-        </form>
-    </header>
 
-    <main id="main"></main>
+<nav>
+	<input type="checkbox" id="check">
+	<label for="check" class="btn">
+		<i class="fas fa-bars"></i>
+	</label>
+	<label class="logo">Ruang Baca</label>
+	<ul>
+		<li><a class="active" href="#">Home</a></li>
+		<li><a href="#">Daftar</a></li>
+		<li><a href="#">About</a></li>
+	</ul>
+</nav>
+
+<div class="bg" style="background-image: url('./img/book.jpg')"></div>
+
+ <form id="form" class="d-flex">
+            <input
+              id="search"
+              type="search"
+              placeholder="  Search article here..."
+            />
+          </form>
+
 </body>
 </html>
